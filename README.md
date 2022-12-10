@@ -2,6 +2,9 @@
 ***
 - API for service using node.js
 ***
+## Warning
+- **This API only supports x86-64 CPU Architecture docker engine**
+***
 ## TODO 
 - [ ] Add swagger document
 - [ ] Add authentification API using passport
