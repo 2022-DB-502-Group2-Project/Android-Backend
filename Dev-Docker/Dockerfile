@@ -16,11 +16,7 @@ RUN apt-get update\
 RUN mkdir api
 WORKDIR /api
 
-# Copy files to container
-COPY . .
-# Install dependencies
-RUN npm install
-
+VOLUME ["/api"]
 # Swagger UI and Application
 # Swagger -> 3000
 # App -> 4000

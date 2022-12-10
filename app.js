@@ -1,11 +1,7 @@
 const express = require('express');
-const dotenv = require('dotenv');
 const passport = require('passport');
 const logger = require('morgan');
 const { exceptionmessage } = require('./utils/codes')
-
-// set dotenv config
-dotenv.config();
 
 // Get router : aall of the endpoint starts with '/api'
 const api = require('./Routes');
@@ -55,6 +51,4 @@ app.use((err,req,res,next) => {
 })
 
 
-app.listen(app.get('port'),() => {
-    console.log(`Server listening on port ${app.get('port')}`);
-})
+module.exports = app;
